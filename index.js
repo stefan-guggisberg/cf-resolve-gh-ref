@@ -22,10 +22,10 @@ addEventListener('fetch', event => {
  * either via `x-github-token` header or `GITHUB_TOKEN` parameter.
  *
  * @param {Request} request
- * @param {Object} req.query The query parameters
- * @param {string} req.query.owner GitHub organization or user
- * @param {string} req.query.repo GitHub repository name
- * @param {string} [req.query.ref=<default branch>] git reference (branch or tag name)
+ * Query parameters:
+ * * `owner`: GitHub organization or user
+ * * `repo`: GitHub repository name
+ * * [`ref`=<default branch>] git reference (branch or tag name)
  * @returns {Promise<object>} result
  * @returns {string} result.sha the sha of the HEAD commit at `ref`
  * @returns {string} result.fqRef the fully qualified name of `ref`
