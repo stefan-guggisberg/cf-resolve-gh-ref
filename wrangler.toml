@@ -1,0 +1,6 @@
+name = "gh-resolve-ref"
+type = "javascript"
+account_id = ""
+workers_dev = true
+route = ""
+zone_id = ""
